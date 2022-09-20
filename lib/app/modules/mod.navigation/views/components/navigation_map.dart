@@ -5,6 +5,8 @@ import 'package:flutter/services.dart';
 import 'package:flutter_mapbox_navigation/library.dart';
 import 'package:get/get.dart';
 
+import '../../../../themes/colors/app_colors.dart';
+
 class NavigationMapView extends StatefulWidget {
   @override
   _NavigationMapViewState createState() => _NavigationMapViewState();
@@ -91,16 +93,6 @@ class _NavigationMapViewState extends State<NavigationMapView> {
     });
   }
 
-  bool isOpened = true;
-  Future showPane() async {
-    Timer.periodic(const Duration(seconds: 7), (Timer timer) async {
-      print("OKOKOKOKOKOKOKOK");
-      if (isOpened) {
-        Get.snackbar("Bonjour", "je suis ce que je suis !");
-      }
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -113,7 +105,7 @@ class _NavigationMapViewState extends State<NavigationMapView> {
                   zoom: 16.0,
                   // tilt: 0.0,
                   // bearing: 0.0,
-                  enableRefresh: true,
+                  enableRefresh: false,
                   mapStyleUrlDay: "mapbox://styles/mapbox/navigation-day-v1",
                   mapStyleUrlNight:
                       "mapbox://styles/mapbox/navigation-night-v1",
@@ -124,7 +116,7 @@ class _NavigationMapViewState extends State<NavigationMapView> {
                   allowsUTurnAtWayPoints: true,
                   mode: MapBoxNavigationMode.drivingWithTraffic,
                   units: VoiceUnits.metric,
-                  simulateRoute: true,
+                  simulateRoute: false,
                   animateBuildRoute: true,
                   longPressDestinationEnabled: true,
                   language: "fr",
@@ -135,7 +127,8 @@ class _NavigationMapViewState extends State<NavigationMapView> {
                   controller.initialize();
                 }),
           ),
-          Align(alignment: Alignment.bottomCenter, child: ModOrderView()),
+          TopMenuButton(),
+          const Align(alignment: Alignment.bottomCenter, child: ModOrderView()),
         ]),
       ),
     );
@@ -169,7 +162,7 @@ class _NavigationMapViewState extends State<NavigationMapView> {
         break;
       case MapBoxEvent.on_arrival:
         if (!_isMultipleStop) {
-          await Future.delayed(Duration(seconds: 3));
+          await Future.delayed(const Duration(seconds: 3));
           await _controller.finishNavigation();
         } else {}
         break;
@@ -184,5 +177,30 @@ class _NavigationMapViewState extends State<NavigationMapView> {
         break;
     }
     setState(() {});
+  }
+}
+
+class TopMenuButton extends StatelessWidget {
+  const TopMenuButton({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Align(
+      alignment: Alignment.topLeft,
+      child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: CircleAvatar(
+              backgroundColor: AppColors.DAMBER1,
+              radius: 25,
+              child: IconButton(
+                  onPressed: () {},
+                  icon: const Icon(
+                    Icons.menu,
+                    size: 28,
+                    color: AppColors.DBLACK,
+                  )))),
+    );
   }
 }

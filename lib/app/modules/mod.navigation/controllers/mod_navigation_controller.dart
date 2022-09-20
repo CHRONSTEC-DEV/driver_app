@@ -1,9 +1,7 @@
 import 'package:get/get.dart';
 
 class ModNavigationController extends GetxController {
-  //TODO: Implement ModNavigationController
-
-  final count = 0.obs;
+  final isNavigating = false.obs;
   @override
   void onInit() {
     super.onInit();
@@ -18,6 +16,4 @@ class ModNavigationController extends GetxController {
   void onClose() {
     super.onClose();
   }
-
-  void increment() => count.value++;
 }
