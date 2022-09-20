@@ -1,0 +1,14 @@
+[
+    {
+        "nom": "Rue K129",
+        "cite": "Cocody",
+        "localite": "Deux-Plateaux",
+        "district": "Deux Plateaux",
+        "etat": "Abidjan",
+        "rue": "",
+        "gps_lat": -3.9991314,
+        "gps_lon": 5.3748702,
+        "distance":2,
+        "duree":5
+    }
+]

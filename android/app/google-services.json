@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "507312885678",
+    "project_id": "juno-driver-e4b81",
+    "storage_bucket": "juno-driver-e4b81.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:507312885678:android:8503c19e5b30e4eeaa423f",
+        "android_client_info": {
+          "package_name": "com.chronostec.driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "507312885678-pask4ufrl1i6p905oc068np2boje2i09.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAM9nQbQqT0VBtSPjsR61YmC3Fcfw-mMDc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "507312885678-pask4ufrl1i6p905oc068np2boje2i09.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:507312885678:android:47273e2996007c39aa423f",
+        "android_client_info": {
+          "package_name": "com.chronostec.driver.driver_juno"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "507312885678-pask4ufrl1i6p905oc068np2boje2i09.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAM9nQbQqT0VBtSPjsR61YmC3Fcfw-mMDc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "507312885678-pask4ufrl1i6p905oc068np2boje2i09.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
