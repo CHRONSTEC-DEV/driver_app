@@ -8,6 +8,7 @@ import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:sizer/sizer.dart';
 
+import 'app/modules/mod.navigation/views/mod_navigation_view.dart';
 import 'app/routes/app_pages.dart';
 import 'firebase_options.dart';
 
@@ -31,9 +32,9 @@ void main() async {
     builder: (p0, p1, p2) => GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: "JUNO DRIVER",
-      // initialRoute: AppPages.INITIAL,
+      initialRoute: AppPages.INITIAL,
       getPages: AppPages.routes,
-      home: NavigationMapView(),
+      // home: ModNavigationView(),
     ),
   ));
 }
