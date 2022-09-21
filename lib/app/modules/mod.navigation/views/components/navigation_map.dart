@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:driver_app/app/modules/mod.navigation/views/components/redirection_buttons.dart';
 import 'package:driver_app/app/modules/mod.order/views/mod_order_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -6,6 +7,8 @@ import 'package:flutter_mapbox_navigation/library.dart';
 import 'package:get/get.dart';
 
 import '../../../../themes/colors/app_colors.dart';
+import '../../../../utils/drawer_view.dart';
+import '../../../common/controllers.dart';
 
 class NavigationMapView extends StatefulWidget {
   @override
@@ -96,6 +99,8 @@ class _NavigationMapViewState extends State<NavigationMapView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      key: ctlHome.ghomeKey,
+      drawer: BuildDrawer(),
       body: SafeArea(
         child: Stack(children: <Widget>[
           Container(
@@ -127,7 +132,8 @@ class _NavigationMapViewState extends State<NavigationMapView> {
                   controller.initialize();
                 }),
           ),
-          TopMenuButton(),
+          // TopMenuButton(),
+          RedirectionButtons(),
           const Align(alignment: Alignment.bottomCenter, child: ModOrderView()),
         ]),
       ),

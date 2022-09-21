@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
 
 class FloatingModal extends StatelessWidget {
@@ -13,7 +12,7 @@ class FloatingModal extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 20),
+        padding: const EdgeInsets.fromLTRB(10, 0, 10, 10),
         child: Material(
           color: backgroundColor,
           clipBehavior: Clip.antiAlias,

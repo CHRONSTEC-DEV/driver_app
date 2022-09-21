@@ -29,6 +29,13 @@
             {
               "client_id": "507312885678-pask4ufrl1i6p905oc068np2boje2i09.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "507312885678-6q0lfjn4448spq5spnck97ctlcilf5qs.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.chronostec.dri"
+              }
             }
           ]
         }
@@ -58,6 +65,13 @@
             {
               "client_id": "507312885678-pask4ufrl1i6p905oc068np2boje2i09.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "507312885678-6q0lfjn4448spq5spnck97ctlcilf5qs.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.chronostec.dri"
+              }
             }
           ]
         }

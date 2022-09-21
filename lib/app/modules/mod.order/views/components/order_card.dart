@@ -53,7 +53,7 @@ class OrderCard extends StatelessWidget {
                     fontSize: 16.sp)),
           ),
           Container(
-            width: 70.w,
+            width: 90.w,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [

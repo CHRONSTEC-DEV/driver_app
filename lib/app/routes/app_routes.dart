@@ -6,6 +6,7 @@ abstract class Routes {
   static const HOME = _Paths.HOME;
   static const MOD_NAVIGATION = _Paths.MOD_NAVIGATION;
   static const MOD_ORDER = _Paths.MOD_ORDER;
+  static const MOD_ORDER_DETAIL = _Paths.MOD_ORDER_DETAIL;
 }
 
 abstract class _Paths {
@@ -13,4 +14,5 @@ abstract class _Paths {
   static const HOME = '/home';
   static const MOD_NAVIGATION = '/mod-navigation';
   static const MOD_ORDER = '/mod-order';
+  static const MOD_ORDER_DETAIL = '/mod-order-detail';
 }

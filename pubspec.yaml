@@ -31,6 +31,10 @@ dependencies:
   sizer: ^2.0.15
   carousel_slider: ^4.1.1
   line_icons: ^2.0.1
+  flutter_launcher_icons: ^0.10.0
+  sn_progress_dialog: ^1.0.8
+  flutter_svg: ^1.1.5
+  firebase_messaging: ^13.0.2
 
 dev_dependencies: 
   flutter_lints: ^2.0.0
@@ -55,6 +59,7 @@ flutter:
     - assets/svg/
     - assets/images/
     - assets/icons/
+    - assets/svg/paiement/
     - assets/json/map_style.txt
     - assets/audio/tone_alert.mp3
   fonts:

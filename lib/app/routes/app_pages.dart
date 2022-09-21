@@ -4,6 +4,8 @@ import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/mod.navigation/bindings/mod_navigation_binding.dart';
 import '../modules/mod.navigation/views/mod_navigation_view.dart';
+import '../modules/mod.order.detail/bindings/mod_order_detail_binding.dart';
+import '../modules/mod.order.detail/views/mod_order_detail_view.dart';
 import '../modules/mod.order/bindings/mod_order_binding.dart';
 import '../modules/mod.order/views/mod_order_view.dart';
 
@@ -29,6 +31,11 @@ class AppPages {
       name: _Paths.MOD_ORDER,
       page: () => const ModOrderView(),
       binding: ModOrderBinding(),
+    ),
+    GetPage(
+      name: _Paths.MOD_ORDER_DETAIL,
+      page: () => const ModOrderDetailView(),
+      binding: ModOrderDetailBinding(),
     ),
   ];
 }
